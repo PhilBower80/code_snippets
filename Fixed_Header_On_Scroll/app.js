@@ -1,6 +1,5 @@
 const body = document.body;
 const nav = document.querySelector('.page-header nav');
-const menu = document.querySelector('.page-header .menu');
 const scrollUp = 'scroll-up';
 const scrollDown = 'scroll-down';
 let lastScroll = 0;
