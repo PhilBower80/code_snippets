@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* FIXED HEADER (sticky scroll) */
+
+.trigger-menu-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	z-index: 2;
+	background: slategrey;
+	height: 200px;
+	transition: transform 0.4s;
+}
+
+/*  STYLES APPLIED BY JAVASCRIPT*/
+
+.scroll-down .trigger-menu-wrapper {
+	transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .trigger-menu-wrapper {
+	transform: none;
+}
+
+/* JUST TO GIVE PAGE CONTENT FOR DEMO TO WORK */
+.page-main section {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.page-main section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+/* end of  JUST TO GIVE PAGE CONTENT FOR DEMO TO WORK */
