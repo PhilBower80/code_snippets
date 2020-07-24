@@ -1,3 +1,4 @@
+// FIXED HEADER (sticky scroll)
 const body = document.body;
 const scrollUp = 'scroll-up';
 const scrollDown = 'scroll-down';
@@ -24,3 +25,5 @@ window.addEventListener('scroll', () => {
 	}
 	lastScroll = currentScroll;
 });
+
+//  end of // FIXED HEADER (sticky scroll)

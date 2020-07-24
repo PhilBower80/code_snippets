@@ -1,0 +1,34 @@
+.burger {
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
+
+	span {
+		background: #fff;
+		display: block;
+		width: 30px;
+		height: 3px;
+		margin-bottom: 5px;
+		position: relative;
+		top: 0;
+		transition: all ease-out 0.4s;
+		user-select: none;
+	}
+}
+
+.burger-container.active span {
+	&:nth-child(1) {
+		transform: rotate(225deg);
+		top: 8px; // this equals span height + span margin
+		background: #fff;
+	}
+	&:nth-child(2) {
+		opacity: 0;
+	}
+
+	&:nth-child(3) {
+		transform: rotate(315deg);
+		top: -8px; // this equals span height + span margin
+		background: #fff;
+	}
+}

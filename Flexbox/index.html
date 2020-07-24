@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Flexbox Examples</title>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="trigger-menu-wrapper">
+            <div></div>
+            <div>
+                <h1 class="fancy">Flexbox</h1>
+            </div>
+            <div class="burger-container">
+                <div class="burger">
+                    <a>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                        <span>&nbsp;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ONE ROW -->
+        <div class="container">
+            <h1 class="fancy">ONE ROW</h1>
+            <div class="flex-row">
+                <div class="panel1">
+                    <h3>Panel 1</h3>
+                </div>
+                <div class="panel2">
+                    <h3>Panel 2</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- TWO COLUMNS WITHIN A ROW -->
+        <div class="container">
+            <h1>TWO COLUMNS WITHIN A ROW</h1>
+            <div class="flex-row">
+                <div class="flex-col">
+                    <div class="panel1">
+                        <h3>Panel 1</h3>
+                    </div>
+                    <div class="panel2">
+                        <h3>Panel 2</h3>
+                    </div>
+                </div>
+                <div class="flex-col">
+                    <div class="panel1">
+                        <h3>Panel 1</h3>
+                    </div>
+                    <div class="panel2">
+                        <h3>Panel 2</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section></section>
+
+    </main>
+
+    <script src="./JS/scrolling_fixed_header.js"></script>
+    <script src="./JS/animate_header.js"></script>
+    <script src="./JS/burger_menu.js"></script>
+</body>
+
+</html>

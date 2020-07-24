@@ -1,0 +1,18 @@
+// see also...
+// animate_header.js
+
+// .fancy {
+// 	color: $phpBlue;
+// 	font-size: 2rem;
+// }
+
+.generatedSpan {
+	opacity: 0;
+	color: #fff;
+	transition: opacity 0.4s ease, color 1s ease;
+}
+
+.generatedSpan.fade {
+	opacity: 1;
+	color: rgb(111, 111, 207);
+}
