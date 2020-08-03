@@ -41,7 +41,7 @@ header::after {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
-  z-index: 2;
+  z-index: 10000;
   background: black;
   height: 100px;
   -webkit-transition: -webkit-transform 0.4s;
@@ -98,6 +98,56 @@ header::after {
           transform: rotate(315deg);
   top: -8px;
   background: #fff;
+}
+
+.nav-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-overlay li {
+  margin: 20px 0 20px;
+}
+
+.nav-overlay a {
+  color: #fff;
+  font-size: 1.875rem;
+  font-weight: 700;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+.nav-overlay a:hover {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.nav-overlay .nav-menu {
+  pointer-events: all;
+}
+
+.nav-overlay.active {
+  visibility: visible;
+  opacity: 0.95;
 }
 
 .flex-row {

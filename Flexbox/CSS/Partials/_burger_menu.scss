@@ -1,3 +1,5 @@
+// BURGER MENU BUTTON
+
 .burger {
 	cursor: pointer;
 	position: relative;
@@ -32,3 +34,48 @@
 		background: #fff;
 	}
 }
+
+// end of BURGER MENU BUTTON
+
+// NAVIGATION
+
+.nav-overlay {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	background: black;
+	// background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+	opacity: 0;
+	pointer-events: none;
+	li {
+		margin: 20px 0 20px;
+	}
+	a {
+		color: #fff;
+		font-size: 1.875rem;
+		font-weight: 700;
+		transition: all ease-in-out 0.4s;
+	}
+	a:hover {
+		color: #fff;
+		font-size: 2.5rem;
+	}
+	.nav-menu {
+		pointer-events: all;
+	}
+}
+
+.nav-overlay.active {
+	visibility: visible;
+	opacity: 0.95;
+}
+
+// end of NAVIGATION

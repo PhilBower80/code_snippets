@@ -17,7 +17,8 @@ header::after {
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 10px;
-	z-index: 2;
+	// z-index: 2;
+	z-index: 10000; // so that the burger menu button is visible when nav-overlay is showing.
 	background: black;
 	height: 100px;
 	transition: transform 0.4s;
