@@ -1,5 +1,11 @@
 // FLEX STYLES
 
+.container {
+	display: flex;
+	max-width: 1200px;
+	margin: auto;
+}
+
 .flex-row {
 	display: flex;
 	flex-flow: row wrap;
