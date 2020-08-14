@@ -26,6 +26,8 @@ header img {
 .intro-content {
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .intro-content img {
@@ -34,10 +36,6 @@ header img {
 }
 
 .intro-text {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin: 0 10rem;
 	width: 30%;
 	/* Appear effect */
@@ -50,7 +48,3 @@ header img {
 	opacity: 1;
 	transform: translateY(0px);
 }
-
-/* * {
-	border: 1px solid red;
-} */
