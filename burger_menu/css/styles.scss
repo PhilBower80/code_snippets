@@ -1,0 +1,115 @@
+// Base Styles
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// Nav Bar / Header
+
+header {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: slategray;
+}
+
+// Animated Burger Menu
+
+.burger {
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+
+	span {
+		background: black;
+		display: block;
+		width: 30px;
+		height: 3px;
+		margin-bottom: 5px;
+		position: relative;
+		top: 0;
+		transition: all ease-out 0.4s;
+		user-select: none;
+	}
+}
+
+.burger-container:hover span {
+	background-color: #7df9ff;
+}
+
+.burger-container.active span {
+	&:nth-child(1) {
+		transform: rotate(225deg);
+		top: 8px; // this equals span height + span margin
+	}
+	&:nth-child(2) {
+		opacity: 0;
+	}
+
+	&:nth-child(3) {
+		transform: rotate(315deg);
+		top: -8px; // this equals span height + span margin
+	}
+}
+
+// Overlay
+
+.overlay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+
+	li {
+		margin: 20px 0 20px;
+	}
+
+	a {
+		color: #00457e;
+		font-size: 1.875rem;
+		font-weight: 700;
+		transition: all ease-in-out 0.4s;
+	}
+
+	a:link,
+	a:visited,
+	a:active {
+		color: #00457e;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #7df9ff;
+		transition: all 0.5s ease-in-out;
+	}
+}
+
+.overlay.active {
+	visibility: visible;
+	opacity: 0.8;
+}

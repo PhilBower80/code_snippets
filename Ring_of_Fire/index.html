@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/43d02c68d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Ring of Fire</title>
+</head>
+
+<body>
+
+    <section class="ring-of-fire">
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+        <svg>
+            <filter id="wavy">
+                <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                    <animate attributeName="baseFrequency" dur="60" values="0.02;0.005;0.02" repeatCount="indefinate">
+                    </animate>
+                </feTurbulence>
+                <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+            </filter>
+        </svg>
+    </section>
+
+</body>
+
+</html>
